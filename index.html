@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda 9z - eSports</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Tienda 9z</h1>
+    <div class="cart" id="cart-button">
+      <span>Carrito (<span id="cart-count">0</span>)</span>
+    </div>
+  </nav>
+
+  <section class="products-container" id="products-container">
+  </section>
+
+  <div id="cart-panel" class="cart-panel">
+    <div class="cart-header">
+      <h2>Carrito</h2>
+      <button id="close-cart">Cerrar</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+    </div>
+    <div class="cart-footer">
+      <button id="checkout">Finalizar compra</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Tienda 9z - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
