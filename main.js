@@ -1,12 +1,11 @@
-// Productos disponibles
 const products = [
   { id: 1, name: "Camiseta 9z", price: 3000, image: "assets/camiseta.jpg" },
   { id: 2, name: "Hoodie 9z", price: 6000, image: "assets/hoodie.jpg" },
   { id: 3, name: "Mousepad 9z", price: 1200, image: "assets/mousepad.jpg" },
-  { id: 4, name: "Gorra 9z", price: 1800, image: "assets/remera.jpg" },
+  { id: 4, name: "Remera 9z", price: 1800, image: "assets/remera.jpg" },
 ];
 
-// Carrito de compras
+// Carrito
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 // Elementos del DOM
@@ -15,7 +14,6 @@ const cartPanel = document.getElementById('cart-panel');
 const closeCartButton = document.getElementById('close-cart');
 const cartItemsContainer = document.getElementById('cart-items');
 
-// Función para renderizar productos
 function renderProducts() {
   const container = document.getElementById('products-container');
   container.innerHTML = '';
@@ -32,7 +30,7 @@ function renderProducts() {
   });
 }
 
-// Función para agregar productos al carrito
+// agregar productos al carrito
 function addToCart(productId) {
   const product = products.find(prod => prod.id === productId);
   cart.push(product);
@@ -42,7 +40,7 @@ function addToCart(productId) {
   showToast(`${product.name} agregado al carrito`);
 }
 
-// Función para eliminar productos del carrito
+// eliminar productos del carrito
 function removeFromCart(index) {
   cart.splice(index, 1);
   localStorage.setItem('cart', JSON.stringify(cart));
@@ -51,12 +49,10 @@ function removeFromCart(index) {
   showToast(`Producto eliminado del carrito`);
 }
 
-// Función para actualizar el contador del carrito
 function updateCartCount() {
   document.getElementById('cart-count').innerText = cart.length;
 }
 
-// Función para renderizar los productos en el carrito
 function renderCartItems() {
   cartItemsContainer.innerHTML = '';
   cart.forEach((item, index) => {
@@ -72,7 +68,6 @@ function renderCartItems() {
   });
 }
 
-// Función para mostrar una notificación
 function showToast(message) {
   Toastify({
     text: message,
@@ -83,7 +78,6 @@ function showToast(message) {
   }).showToast();
 }
 
-// Funciones para abrir y cerrar el panel del carrito
 cartButton.addEventListener('click', () => {
   cartPanel.classList.add('active');
 });
@@ -92,7 +86,6 @@ closeCartButton.addEventListener('click', () => {
   cartPanel.classList.remove('active');
 });
 
-// Inicializar la página
 renderProducts();
 updateCartCount();
 renderCartItems();
