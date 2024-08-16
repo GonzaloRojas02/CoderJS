@@ -1,8 +1,8 @@
 const products = [
-  { id: 1, name: "Camiseta 9z", price: 3000, image: "../assets/camiseta.jpg" },
-  { id: 2, name: "Hoodie 9z", price: 6000, image: "../assets/hoodie.jpg" },
-  { id: 3, name: "Mousepad 9z", price: 1200, image: "../assets/mousepad.jpg" },
-  { id: 4, name: "Remera 9z", price: 1800, image: "../assets/remera.jpg" },
+  { id: 1, name: "Camiseta 9z", price: 3000, image: "./assets/camiseta.jpg" },
+  { id: 2, name: "Hoodie 9z", price: 6000, image: "./assets/hoodie.jpg" },
+  { id: 3, name: "Mousepad 9z", price: 1200, image: "./assets/mousepad.jpg" },
+  { id: 4, name: "Remera 9z", price: 1800, image: "./assets/remera.jpg" },
 ];
 
 // Carrito
