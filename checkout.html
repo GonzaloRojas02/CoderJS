@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pago</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Tienda 9z</h1>
+    <a href="index.html" class="back-link">Volver a la tienda</a>
+  </nav>
+
+  <section class="checkout-container">
+    <h2>Finalizar Compra</h2>
+    <form id="checkout-form">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Dirección</label>
+        <input type="text" id="address" name="address" required>
+      </div>
+      <div class="form-group">
+        <label for="card-number">Número de tarjeta</label>
+        <input type="text" id="card-number" name="card-number" required>
+      </div>
+      <button type="submit">Pagar</button>
+    </form>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>
