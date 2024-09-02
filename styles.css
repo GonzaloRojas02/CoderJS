@@ -218,3 +218,52 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #333;
 }
+
+/* API */
+.news-feed {
+  text-align: center;
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-feed h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-item {
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.news-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.news-item p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.news-item a {
+  color: #1f1f1f;
+  text-decoration: none;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
